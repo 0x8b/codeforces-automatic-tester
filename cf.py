@@ -16,6 +16,8 @@ from urllib.request import urlopen
 VERSION = '0.1'
 URL = 'https://codeforces.com'
 RESET  = '\033[0m'
+
+
 LANGUAGES = {
     'python': {
         'template': 'main.py',
@@ -165,7 +167,6 @@ elif args.command == 'test':
     except FileNotFoundError as fnfe:
         print_red('Problem not found')
         exit(0)
-
 
     if args.add or args.remove:
         if args.add:
